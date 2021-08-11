@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Flip Card</title>
+</head>
+<body>
+    <header>
+        <h1>Paiement par carte de crédit</h1>
+        <div id="frais">
+            Frais de transaction &nbsp;
+            <span id="montantfrais">59,90€</span>
+        </div>
+    </header>
+    <div id="main">
+        <div id="card">
+            <div id="frontcard">
+                <p id="cardnumber">.... .... .... ....</p>
+                <div id="cardinfo">
+                    <div id="cardname">
+                        <p id="cardnamep">Full Name</p>
+                    </div>
+                    <div id="carddate">
+                        <p id="carddatep">MM/YY</p>
+                    </div>
+                </div>
+                <div id="secure">🔒 Payment processing by HiPay SAS, 256-bit SSL Secured</div>
+            </div>
+            <div id="backcard">
+                <div id="bandenoire"></div>
+                <div id="signcvc">
+                    <div id="bandeblanche"></div>
+                    <p id="cvc">...</p>
+                </div>
+                <div id="secureback">🔒 Payment processing by HiPay SAS, 256-bit SSL Secured</div>
+            </div>
+        </div>
+        <form id="informations" style="padding-left: 200px;">
+            <div class="inputinfo">
+                <label for="cardnumberinfo">Numéros de la carte</label>
+                <div>
+                    <input type="text" id="cardnumberinfo">
+                </div>
+            </div>
+            <div class="inputinfo">
+                <label for="titulaireinfo">Titulaire de la carte</label>
+                <div>
+                    <input type="text" id="titulaireinfo">
+                </div>
+            </div>
+            <div id="datecvc">
+                <div id="dateinfo">
+                    <label>Date d'expiration</label>
+                    <div>
+                        <input type="text" id="expiration" placeholder="MM/YY">
+                    </div>
+                </div>
+                <div id="cvcinfo">
+                    <label>Cryptogramme</label>
+                    <div>
+                        <input type="text" id="crypto" placeholder="CVC">
+                    </div>
+                </div>
+            </div>
+            <input type="submit" id="button" value="Payer 59,90€">
+        </form>
+    </div>
+    
+<script src="app.js"></script>    
+</body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    background: #B8DBFF;
+}
+#card{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    perspective: 1000px;
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* transform: rotateY(180deg); */
+
+
+}
+#frontcard {
+    width: 100%;
+    height: 100%;
+    background-color: #365B80;
+    border-radius: 10px;
+    border: solid 1px rgb(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+
+
+}
+#backcard {
+    width: 100%;
+    height: 100%;
+    background-color: #365B80;
+    border-radius: 10px;
+    border: solid 1px rgb(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+#cardnumber{
+    font-size: 20px;
+    margin-top: 80px;
+}
+#cardinfo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+    /* font-size: 20px; */
+    
+}
+#bandenoire{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: black;
+}
+#signcvc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#bandeblanche{
+    width: 60%;
+    height: 20px;
+    background-color: cornsilk;
+}
+#cvc{
+    font-size: 30px;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+#information{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 200px; */
+}
+#datecvc{
+    display: flex;
+    margin-top: 20px;
+}
+#cardnumberinfo{
+    width: 100%;
+
+}
+#titulaireinfo{
+    width: 100%;
+}
+label{
+    font-weight: bold;
+}
+
+.inputinfo{
+    margin-top: 20px;
+}
+
+#button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,145,204,1) 50%, rgba(54,91,128,1) 100%);
+    font-weight: bold;
+}
+header{
+    text-align: center;
+}
+#montantfrais{
+    color: coral;
+    font-weight: bold;
+}
+#secureback{
+    margin-top: 50px;
+}
