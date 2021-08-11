@@ -34,9 +34,9 @@ crypto.addEventListener('input', () => {
 });
 
                                             // Flip when click CVC
-crypto.onfocus = function () {
+crypto.onfocus = () => {
     card.style.transform = "rotateY(180deg)";
 };
-crypto.onblur = function () {
+crypto.onblur = () => {
     card.style.transform = "rotateY(0deg)";
 };
