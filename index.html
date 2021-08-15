@@ -43,7 +43,7 @@
             <div class="inputinfo">
                 <label for="cardnumberinfo">Numéros de la carte</label>
                 <div>
-                    <input type="text" id="cardnumberinfo">
+                    <input type="text" id="cardnumberinfo" pattern="^4\d{12}(?:\d{3})?$" maxlength="19">
                 </div>
             </div>
             <div class="inputinfo">
@@ -56,13 +56,13 @@
                 <div id="dateinfo">
                     <label>Date d'expiration</label>
                     <div>
-                        <input type="text" id="expiration" placeholder="MM/YY">
+                        <input type="text" id="expiration" placeholder="MM/YY" maxlength="5">
                     </div>
                 </div>
                 <div id="cvcinfo">
                     <label>Cryptogramme</label>
                     <div>
-                        <input type="text" id="crypto" placeholder="CVC">
+                        <input type="text" id="crypto" placeholder="CVC" maxlength="3">
                     </div>
                 </div>
             </div>

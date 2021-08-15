@@ -15,7 +15,33 @@ cardnumberinfo.addEventListener('input', () => {
     if(cardnumberinfo.value.length===4 || cardnumberinfo.value.length===9 || cardnumberinfo.value.length===14){
         cardnumberinfo.value+=" ";
     }
+
+    // if (/^4\d{12}(?:\d{3})?$/.test(cardnumberinfo)){
+    //     alert("numero valide");
+    // } 
+    // else {
+    //     alert("numero invalide");
+    // }
+
 });
+
+
+// Function validation(){
+//     var regexcard = new RegExp(/^4\d{12}(?:\d{3})?$/);
+//     if(regexcard.test(cardnumberinfo.value)){
+//         alert("numero valide");
+
+// };
+// var regexcard = cardnumberinfo.test(/^4\d{12}(?:\d{3})?$/);
+
+// cardnumberinfo.alert = () => {
+//         if (/^4\d{12}(?:\d{3})?$/.test(cardnumberinfo)){
+//         alert("numero valide");
+//     } 
+//     else {
+//         alert("numero invalide");
+//     }
+// };
 
 titulaireinfo.addEventListener('input', () => {
     cardnamep.innerHTML = titulaireinfo.value;
